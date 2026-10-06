@@ -1,0 +1,401 @@
+/* ================================
+   BCA BRAIN BATTLE - STYLE.CSS
+   ================================ */
+
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7ff;
+    color: #222;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+nav {
+    background: #ffffff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4b4ded;
+}
+
+.logo span {
+    color: #ff6584;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4b4ded;
+}
+
+
+/* ---------- HERO SECTION ---------- */
+
+.hero {
+    text-align: center;
+    padding: 70px 20px 45px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #25265e;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #4b4ded;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.hero small {
+    color: #888;
+    font-size: 14px;
+}
+
+
+/* ---------- SECTION TITLE ---------- */
+
+.section-title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    color: #25265e;
+}
+
+.section-title p {
+    color: #777;
+    margin-top: 8px;
+}
+
+
+/* ---------- DIFFICULTY CARDS ---------- */
+
+.difficulty-container {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.difficulty-card {
+    background: white;
+    border-radius: 18px;
+    padding: 35px 25px;
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.difficulty-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.difficulty-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.difficulty-card p {
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+/* ---------- DIFFICULTY COLORS ---------- */
+
+.easy {
+    border-top: 6px solid #35b86b;
+}
+
+.medium {
+    border-top: 6px solid #f2b705;
+}
+
+.hard {
+    border-top: 6px solid #ef4444;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.btn {
+    border: none;
+    padding: 11px 25px;
+
+    border-radius: 25px;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+.easy .btn {
+    background: #35b86b;
+}
+
+.medium .btn {
+    background: #f2b705;
+}
+
+.hard .btn {
+    background: #ef4444;
+}
+
+
+/* ---------- SUBJECT SECTION ---------- */
+
+.subjects {
+    width: 85%;
+    margin: 70px auto;
+}
+
+.subject-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ---------- SUBJECT CARD ---------- */
+
+.subject-card {
+    background: white;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.subject-card .subject-icon {
+    font-size: 35px;
+
+    margin-bottom: 12px;
+}
+
+.subject-card h3 {
+    color: #333;
+
+    margin-bottom: 7px;
+}
+
+.subject-card p {
+    color: #888;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ---------- FEATURES SECTION ---------- */
+
+.features {
+    background: #25265e;
+
+    color: white;
+
+    padding: 50px 8%;
+
+    margin-top: 60px;
+}
+
+.features h2 {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.feature-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    text-align: center;
+}
+
+.feature {
+    padding: 20px;
+}
+
+.feature > div {
+    font-size: 30px;
+}
+
+.feature h3 {
+    margin: 12px 0;
+}
+
+.feature p {
+    color: #d5d5e5;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    background: #17183f;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+/* ---------- BUTTON FOCUS ---------- */
+
+button:focus {
+    outline: none;
+}
+
+
+/* ---------- RESPONSIVE TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    .difficulty-container {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .subject-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+
+/* ---------- RESPONSIVE MOBILE ---------- */
+
+@media (max-width: 500px) {
+
+    .hero {
+        padding: 50px 15px 35px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .difficulty-container {
+        width: 90%;
+    }
+
+    .subject-container {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    nav {
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+}
